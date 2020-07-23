@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:text="Button"
+        android:gravity="center">
+
+    </TextView>
+
+    ## 사용자의 Input을 화면에 표시가 되는 ViewComponent
+    ## hint는 사용자의 입력 전 출력 문자를 보여줌
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="입력하세요"
+        android:textColorHint="#FFFFFF"
+        android:gravity="center"
+        android:background="@color/colorAccent">
+
+    </EditText>
+
+
+</LinearLayout>
