@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Yacung">코청누나</string>
+    <string name="Chedoo">코두누나</string>
+    <string-array name="string_array">
+        <item>누</item>
+        <item>나</item>
+        <item>나</item>
+        <item>죽</item>
+        <item>어</item>
+    </string-array>
+</resources>

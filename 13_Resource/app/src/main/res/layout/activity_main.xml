@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+     이미지 사용을 위해서 src 를 통해 소스파일에 접근하고
+     @를 통해 drawble 폴더에 접근이 가능함
+     scaleType을 통해서 여백을 관리해줄 수 있음
+     scaleType 속성
+     1 ) fitXY : 주어진 칸을 비율 상관없이 잘리지 않게 늘리는 방식
+     2 ) centerCrop : 이미지가 일부 잘리더라도 비율에 따라 늘리는 방식
+     -->
+    <ImageView
+        android:id="@+id/Yachung"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="fitXY"
+        android:src="@drawable/yachung"
+        >
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yachung"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/YachungText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="50dp"
+            android:text="야청누나"
+            android:textColor="#000000">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="50dp"
+            android:text="@string/Yacung"
+            android:textColor="@color/colorForYachung">
+            ## @color/colorForYachung 을 이용해 RGB 코드를 대신함
+            ## @string/Yacung 을 이용해 직접 적는것을 대신함
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
